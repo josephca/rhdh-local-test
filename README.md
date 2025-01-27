@@ -13,8 +13,8 @@ This guide explains how to set up a local test environment to run [end-to-end te
 1. **Access to Vault**Ensure you have login access to [Vault](https://vault.ci.openshift.org/ui/vault/secrets/kv/show/selfservice/rhdh-qe/rhdh). For access, contact `@rhdh-qe`.
 2. **npm Installation**
 
-   - `npm` is required by the`setup-rhdh-test.sh` script to install [dotenv](https://www.npmjs.com/package/dotenv) indirectly.
-   - After the initial installation of`dotenv`, you may skip additional installations by commenting out the`install_dotenv` function in`setup-rhdh-test.sh`.
+   - `npm` is required by the `setup-rhdh-test.sh` script to install [dotenv](https://www.npmjs.com/package/dotenv) indirectly.
+   - After the initial installation of `dotenv`, you may skip additional installations by commenting out the `install_dotenv` function in `setup-rhdh-test.sh`.
 
 3. **RHDH Pull Secret**Ensure you have the file `auth/rhdh-pull-secret.yaml` to access the [RHDH container image](https://quay.io/repository/rhdh-community/rhdh). Follow this [guide](https://docs.google.com/document/d/1X40OGE7h0UW-nNGnkqW1ymsmgsK4zICmMuHvzFHlUzw/edit?tab=t.0#bookmark=id.i9ubi2cljqjc) to create the pull secret.
 4. **OCP Cluster**
@@ -59,10 +59,10 @@ Execute the script to set up the environment:
 
 ![](assets/20250123_162955_image.png)
 
-- Press`Enter` to accept the default option (Option 1). The script will:
-  - Backup your existing`rhdh` folder and clone the [RHDH repository](https://github.com/redhat-developer/rhdh).
+- Press `Enter` to accept the default option (Option 1). The script will:
+  - Backup your existing `rhdh` folder and clone the [RHDH repository](https://github.com/redhat-developer/rhdh).
   - Display the configuration of your local test environment.
-  - Update`process.env.BASEURL` in`rhdh/e2e-tests/playwright.config.ts`.
+  - Update `process.env.BASEURL` in `rhdh/e2e-tests/playwright.config.ts`.
 
 ![](assets/20250123_163122_image.png)
 
@@ -95,7 +95,7 @@ Select Option 1 to:
 
 The test results will appear in your command window and browser.
 
-- To run RHDH_RBAC end-to-end tests, press`Ctrl+C` to close the browser with test results, then run`./localtest_main.sh` and select`121`
+- To run RHDH_RBAC end-to-end tests, press `Ctrl+C` to close the browser with test results, then run `./localtest_main.sh` and select `121`
 
 > 🚀 **Note:** Some tests may require additional configuration to pass successfully.
 
