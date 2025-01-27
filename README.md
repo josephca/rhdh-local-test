@@ -6,14 +6,14 @@ This guide explains how to set up a local test environment to run [end-to-end te
 
 > ⚠️ **Note:** The steps and files referenced in this guide are based on macOS. If you're using another operating system, minor adjustments may be required.
 
----
+
 
 ## **Prerequisites**
 
 1. **Access to Vault**Ensure you have login access to [Vault](https://vault.ci.openshift.org/ui/vault/secrets/kv/show/selfservice/rhdh-qe/rhdh). For access, contact `@rhdh-qe`.
 2. **npm Installation**
 
-   - `npm` is required by the`setup-rhdh-test.sh` script to install[dotenv](https://www.npmjs.com/package/dotenv) indirectly.
+   - `npm` is required by the`setup-rhdh-test.sh` script to install [dotenv](https://www.npmjs.com/package/dotenv) indirectly.
    - After the initial installation of`dotenv`, you may skip additional installations by commenting out the`install_dotenv` function in`setup-rhdh-test.sh`.
 
 3. **RHDH Pull Secret**Ensure you have the file `auth/rhdh-pull-secret.yaml` to access the [RHDH container image](https://quay.io/repository/rhdh-community/rhdh). Follow this [guide](https://docs.google.com/document/d/1X40OGE7h0UW-nNGnkqW1ymsmgsK4zICmMuHvzFHlUzw/edit?tab=t.0#bookmark=id.i9ubi2cljqjc) to create the pull secret.
@@ -60,7 +60,7 @@ Execute the script to set up the environment:
 ![](assets/20250123_162955_image.png)
 
 - Press`Enter` to accept the default option (Option 1). The script will:
-  - Backup your existing`rhdh` folder and clone the[RHDH repository](https://github.com/redhat-developer/rhdh).
+  - Backup your existing`rhdh` folder and clone the [RHDH repository](https://github.com/redhat-developer/rhdh).
   - Display the configuration of your local test environment.
   - Update`process.env.BASEURL` in`rhdh/e2e-tests/playwright.config.ts`.
 
@@ -138,9 +138,9 @@ Edit the file located at `files/.ibm/pipelines/local_env_variables_1.4.sh` and p
 
 Select `Option 2` or `Option 3` to set up the environment for `release-1.4` with a test cluster. The script will:
 
-- Backup your existing`rhdh` folder and clone the[RHDH repository](https://github.com/redhat-developer/rhdh).
+- Backup your existing`rhdh` folder and clone the [RHDH repository](https://github.com/redhat-developer/rhdh).
 - Display the configuration of your local test environment.
-- Update`process.env.BASEURL` in`rhdh/e2e-tests/playwright.config.ts`.
+- Update`process.env.BASEURL` in `rhdh/e2e-tests/playwright.config.ts`.
 - ![](assets/20250123_163628_image.png)
 
 #### 5. Run the test script
