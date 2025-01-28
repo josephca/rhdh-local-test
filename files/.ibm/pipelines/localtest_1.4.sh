@@ -327,6 +327,7 @@ run_tests() {
       yarn showcase-rbac
     else 
       echo "[INFO]: starting tests with RHDH"
+      yarn showcase
     fi
     
   ) 2>&1 | tee "/tmp/${LOGFILE}"
