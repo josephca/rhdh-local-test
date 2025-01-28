@@ -16,7 +16,7 @@ This guide explains how to set up a local test environment to run [end-to-end te
    - `npm` is required by the `setup-rhdh-test.sh` script to install [dotenv](https://www.npmjs.com/package/dotenv) indirectly.
    - After the initial installation of `dotenv`, you may skip additional installations by commenting out the `install_dotenv` function in `setup-rhdh-test.sh`.
 
-3. **RHDH Pull Secret**Ensure you have the file `auth/rhdh-pull-secret.yaml` to access the [RHDH container image](https://quay.io/repository/rhdh-community/rhdh). Follow this [guide](https://docs.google.com/document/d/1X40OGE7h0UW-nNGnkqW1ymsmgsK4zICmMuHvzFHlUzw/edit?tab=t.0#bookmark=id.i9ubi2cljqjc) to create the pull secret.
+3. **RHDH Pull Secret** Ensure you have the file `auth/rhdh-pull-secret.yaml` to access the [RHDH container image](https://quay.io/repository/rhdh-community/rhdh). Follow this [guide](https://docs.google.com/document/d/1X40OGE7h0UW-nNGnkqW1ymsmgsK4zICmMuHvzFHlUzw/edit?tab=t.0#bookmark=id.i9ubi2cljqjc) to create the pull secret.
 4. **OCP Cluster**
    Make sure you have access to an OpenShift Container Platform (OCP) cluster.
 
